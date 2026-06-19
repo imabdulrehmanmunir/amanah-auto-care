@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMANAH AUTO CARE | Premium Auto Electrical & Mechanical Workshop Makkah</title>
+
+    <meta name="description"
+        content="Professional auto electrical and general mechanical workshop in Makkah. Expert mechanics, fast diagnostics, AC repair, and reliable service. Contact us today!">
+    <meta name="keywords"
+        content="Auto Electrician Makkah, Car Electrical Repair Makkah, Mechanic Workshop Makkah, Car AC Repair Makkah, Auto Diagnostics Makkah, General Mechanic Makkah, Vehicle Electrical Services Makkah, كهربائي سيارات مكة, ميكانيكي سيارات مكة, ورشة سيارات مكة">
+    <link rel="canonical" href="https://amanahautocare.com/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://amanahautocare.com/">
+    <meta property="og:title" content="AMANAH AUTO CARE | Makkah Auto Experts">
+    <meta property="og:description"
+        content="Premium auto electrical & mechanical workshop in Makkah. Fast, reliable, and professional.">
+    <meta property="og:image" content="https://amanahautocare.com/og-image.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AMANAH AUTO CARE | Makkah Auto Experts">
+    <meta name="twitter:description"
+        content="Premium auto electrical & mechanical workshop in Makkah. Fast, reliable, and professional.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#07101E',
+                        'navy-light': '#111D32',
+                        gold: '#D4AF37',
+                        'gold-light': '#F3D268',
+                        charcoal: '#1A1A1A',
+                        offwhite: '#F8F9FA'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        arabic: ['Cairo', 'sans-serif']
+                    },
+                    backgroundImage: {
+                        'hero-pattern': "url('https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=2000&auto=format&fit=crop')",
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        :root {
+            --primary-navy: #07101E;
+            --primary-gold: #D4AF37;
+        }
+
+        body {
+            background-color: var(--primary-navy);
+            color: #ffffff;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Language Toggle Classes */
+        html[dir="rtl"] {
+            font-family: 'Cairo', sans-serif;
+        }
+
+        html[dir="rtl"] .en {
+            display: none !important;
+        }
+
+        html[dir="ltr"] .ar {
+            display: none !important;
+        }
+
+        html[dir="rtl"] .text-left {
+            text-align: right !important;
+        }
+
+        html[dir="rtl"] .ml-auto {
+            margin-right: auto !important;
+            margin-left: 0 !important;
+        }
+
+        /* High-Performance Cards (No heavy backdrop-filter blur) */
+        .premium-card {
+            background: #111D32;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s ease, box-shadow 0.3s ease;
+            will-change: transform;
+        }
+
+        .premium-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(212, 175, 55, 0.4);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Gradients & Text */
+        .text-gradient {
+            background: linear-gradient(to right, #D4AF37, #FFF, #D4AF37);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% auto;
+            animation: shine 5s linear infinite;
+        }
+
+        @keyframes shine {
+            to {
+                background-position: 200% center;
+            }
+        }
+
+        /* Hardware Accelerated Scroll Progress */
+        #scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            width: 100%;
+            background: var(--primary-gold);
+            z-index: 9999;
+            transform-origin: 0 50%;
+            transform: scaleX(0);
+            transition: transform 0.1s ease-out;
+            will-change: transform;
+        }
+
+        html[dir="rtl"] #scroll-progress {
+            transform-origin: 100% 50%;
+        }
+
+        /* Floating elements */
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-8px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        /* Work Process Connectors */
+        .process-connector::after {
+            content: '';
+            position: absolute;
+            top: 4rem;
+            right: -50%;
+            width: 100%;
+            height: 2px;
+            background: dashed 2px rgba(212, 175, 55, 0.2);
+            z-index: 0;
+            display: none;
+        }
+
+        @media (min-width: 1024px) {
+            .process-connector::after {
+                display: block;
+            }
+
+            html[dir="rtl"] .process-connector::after {
+                right: auto;
+                left: -50%;
+            }
+
+            .process-card:last-child .process-connector::after {
+                display: none;
+            }
+        }
+
+        /* Hide Scrollbar for clean UI */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--primary-navy);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--primary-gold);
+        }
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutomotiveBusiness",
+      "name": "Amanah Auto Care",
+      "image": "https://amanahautocare.com/logo.png",
+      "@id": "",
+      "url": "https://amanahautocare.com",
+      "telephone": "+966569384183",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Makkah",
+        "addressRegion": "Makkah Province",
+        "addressCountry": "SA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 21.3891,
+        "longitude": 39.8579
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Saturday", "Sunday"],
+        "opens": "08:00",
+        "closes": "22:00"
+      },
+      "priceRange": "$$"
+    }
+    </script>
+</head>
+
+<body class="antialiased selection:bg-gold selection:text-navy">
+
+    <div id="scroll-progress"></div>
+
+    <nav class="fixed w-full z-50 bg-navy/95 border-b border-gray-800 transition-all duration-300 shadow-xl"
+        id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20 md:h-24">
+                <div class="flex-shrink-0 flex items-center cursor-pointer">
+                    <img class=" text-gold mr-2 rtl:ml-2 rtl:mr-0" src="logo.png" width="70px" alt="">
+                    <span class="text-2xl font-bold tracking-wider text-white">
+                        
+                        AMANAH<span class="text-gold">AUTO</span>
+                    </span>
+                </div>
+
+                <div class="hidden md:flex items-center space-x-8 rtl:space-x-reverse">
+                    <a href="#services" class="text-gray-300 hover:text-gold transition duration-300 font-medium">
+                        <span class="en">Services</span><span class="ar">الخدمات</span>
+                    </a>
+                    <a href="#about" class="text-gray-300 hover:text-gold transition duration-300 font-medium">
+                        <span class="en">About Us</span><span class="ar">من نحن وفريقنا</span>
+                    </a>
+                    <a href="#contact" class="text-gray-300 hover:text-gold transition duration-300 font-medium">
+                        <span class="en">Contact</span><span class="ar">اتصل بنا</span>
+                    </a>
+
+                    <button onclick="toggleLanguage()"
+                        class="px-4 py-2 rounded-full text-white hover:text-gold transition duration-300 flex items-center gap-2 border border-transparent hover:border-gold/30">
+                        <i class="fa-solid fa-globe"></i>
+                        <span class="en font-arabic">العربية</span><span class="ar font-sans">English</span>
+                    </button>
+
+                    <a href="https://wa.me/966569384183" target="_blank"
+                        class="bg-gold text-navy px-6 py-2.5 rounded-full font-bold hover:bg-white transition duration-300 transform hover:-translate-y-1">
+                        <span class="en">Book Now</span><span class="ar">احجز الآن</span>
+                    </a>
+                </div>
+
+                <div class="md:hidden flex items-center gap-4">
+                    <button onclick="toggleLanguage()" class="text-gray-300 hover:text-gold font-bold">
+                        <span class="en font-arabic">عربي</span><span class="ar font-sans">EN</span>
+                    </button>
+                    <button onclick="toggleMobileMenu()" class="text-gray-300 hover:text-white focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-navy-light border-t border-gray-800">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="#services"
+                    class="block px-3 py-3 text-base font-medium text-white rounded-lg hover:bg-navy"><span
+                        class="en">Services</span><span class="ar">الخدمات</span></a>
+                <a href="#process"
+                    class="block px-3 py-3 text-base font-medium text-white rounded-lg hover:bg-navy"><span
+                        class="en">Work Process</span><span class="ar">آلية العمل</span></a>
+                <a href="#about" class="block px-3 py-3 text-base font-medium text-white rounded-lg hover:bg-navy"><span
+                        class="en">About & Team</span><span class="ar">من نحن وفريقنا</span></a>
+                <a href="#contact"
+                    class="block px-3 py-3 text-base font-medium text-white rounded-lg hover:bg-navy"><span
+                        class="en">Contact</span><span class="ar">اتصل بنا</span></a>
+                <a href="https://wa.me/966569384183"
+                    class="block w-full text-center px-3 py-3 mt-4 text-base font-bold bg-gold text-navy rounded-xl"><span
+                        class="en">Book Appointment</span><span class="ar">حجز موعد</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-20">
+        <div class="absolute inset-0 bg-hero-pattern bg-cover bg-center bg-no-repeat opacity-40"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-navy/90 via-navy/70 to-navy"></div>
+
+        <div class="relative z-10 text-center px-4 max-w-5xl mx-auto mt-10" data-aos="fade-up">
+            <div class="inline-block mb-6 px-5 py-2 rounded-full border border-gold/30 bg-navy/80 shadow-lg">
+                <span class="text-gold font-bold tracking-wide text-xs sm:text-sm uppercase">
+                    <span class="en">Premium Auto Service in Makkah</span>
+                    <span class="ar">خدمة سيارات متميزة في مكة</span>
+                </span>
+            </div>
+
+            <h1 class="text-4xl sm:text-5xl md:text-7xl font-extrabold mb-6 leading-tight drop-shadow-2xl">
+                <span class="en">Trusted Auto Electrical &<br><span class="text-gradient">Mechanical
+                        Experts</span></span>
+                <span class="ar">خبراء كهرباء وميكانيكا<br><span class="text-gradient">السيارات المعتمدون</span></span>
+            </h1>
+
+            <p class="text-base sm:text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
+                <span class="en">Delivering dealership-quality repairs with uncompromising honesty. Modern diagnostics,
+                    fast turnaround, and guaranteed satisfaction.</span>
+                <span class="ar">نقدم إصلاحات بجودة الوكالة مع التزام تام بالأمانة. فحص حديث، إنجاز سريع، ورضا
+                    مضمون.</span>
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="tel:+966569384183"
+                    class="w-full sm:w-auto px-8 py-4 bg-gold text-navy font-bold rounded-xl hover:bg-white hover:shadow-[0_0_20px_rgba(212,175,55,0.4)] transition-all duration-300 flex items-center justify-center gap-3">
+                    <i class="fa-solid fa-phone"></i>
+                    <span class="en">Call Now</span><span class="ar">اتصل الآن</span>
+                </a>
+                <a href="https://wa.me/966569384183" target="_blank"
+                    class="w-full sm:w-auto px-8 py-4 bg-[#25D366] text-white font-bold rounded-xl hover:bg-[#128C7E] transition-all duration-300 flex items-center justify-center gap-3">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                    <span class="en">WhatsApp Us</span><span class="ar">راسلنا على واتساب</span>
+                </a>
+            </div>
+
+            <div
+                class="mt-12 flex flex-wrap justify-center gap-4 sm:gap-8 text-sm md:text-base text-gray-400 font-medium">
+                <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold"></i> <span
+                        class="en">Expert Technicians</span><span class="ar">فنيون خبراء</span></div>
+                <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold"></i> <span
+                        class="en">Fast Diagnostics</span><span class="ar">فحص سريع</span></div>
+                <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold"></i> <span
+                        class="en">Honest Pricing</span><span class="ar">أسعار صادقة</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-10 border-y border-gray-800 bg-[#0a1526] relative z-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center" id="counter-section">
+                <div>
+                    <div class="text-3xl md:text-4xl font-bold text-gold mb-1"><span class="counter"
+                            data-target="15">0</span>+</div>
+                    <div class="text-gray-400 text-xs md:text-sm uppercase tracking-wider font-semibold"><span
+                            class="en">Years Experience</span><span class="ar">سنوات الخبرة</span></div>
+                </div>
+                <div>
+                    <div class="text-3xl md:text-4xl font-bold text-gold mb-1"><span class="counter"
+                            data-target="5000">0</span>+</div>
+                    <div class="text-gray-400 text-xs md:text-sm uppercase tracking-wider font-semibold"><span
+                            class="en">Cars Repaired</span><span class="ar">سيارة تم إصلاحها</span></div>
+                </div>
+                <div>
+                    <div class="text-3xl md:text-4xl font-bold text-gold mb-1"><span class="counter"
+                            data-target="100">0</span>%</div>
+                    <div class="text-gray-400 text-xs md:text-sm uppercase tracking-wider font-semibold"><span
+                            class="en">Honest Pricing</span><span class="ar">أسعار صادقة</span></div>
+                </div>
+                <div>
+                    <div class="text-3xl md:text-4xl font-bold text-gold mb-1"><span class="counter"
+                            data-target="24">0</span>/7</div>
+                    <div class="text-gray-400 text-xs md:text-sm uppercase tracking-wider font-semibold"><span
+                            class="en">Customer Support</span><span class="ar">دعم العملاء</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 bg-navy relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-gold font-bold tracking-widest uppercase text-sm mb-2">
+                    <span class="en">Our Expertise</span><span class="ar">خبراتنا</span>
+                </h2>
+                <h3 class="text-3xl md:text-5xl font-bold mb-4">
+                    <span class="en">Premium Auto Services</span><span class="ar">خدمات سيارات متميزة</span>
+                </h3>
+                <div class="w-20 h-1 bg-gold mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="premium-card p-8 rounded-2xl group" data-aos="fade-up">
+                    <div
+                        class="w-14 h-14 rounded-xl flex items-center justify-center mb-6 bg-[#1a2942] group-hover:bg-gold transition-colors duration-300 shadow-inner">
+                        <i class="fa-solid fa-bolt text-2xl text-gold group-hover:text-navy transition-colors"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3 text-white">
+                        <span class="en">Auto Electrical Repair</span><span class="ar">إصلاح كهرباء السيارات</span>
+                    </h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        <span class="en">Complete electrical wiring, fuse box repairs, and fixing short circuits with
+                            precision.</span>
+                        <span class="ar">إصلاح شامل للأسلاك الكهربائية، علبة الفيوزات، وإصلاح الالتماس الكهربائي
+                            بدقة.</span>
+                    </p>
+                </div>
+                <div class="premium-card p-8 rounded-2xl group" data-aos="fade-up" data-aos-delay="50">
+                    <div
+                        class="w-14 h-14 rounded-xl flex items-center justify-center mb-6 bg-[#1a2942] group-hover:bg-gold transition-colors duration-300 shadow-inner">
+                        <i
+                            class="fa-solid fa-laptop-code text-2xl text-gold group-hover:text-navy transition-colors"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3 text-white">
+                        <span class="en">ECU Diagnostics</span><span class="ar">فحص كمبيوتر السيارة</span>
+                    </h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        <span class="en">Advanced computerized scanning to detect engine, transmission, and sensor
+                            faults accurately.</span>
+                        <span class="ar">فحص كمبيوتر متقدم لاكتشاف أعطال المحرك وناقل الحركة والحساسات بدقة.</span>
+                    </p>
+                </div>
+                <div class="premium-card p-8 rounded-2xl group" data-aos="fade-up" data-aos-delay="100">
+                    <div
+                        class="w-14 h-14 rounded-xl flex items-center justify-center mb-6 bg-[#1a2942] group-hover:bg-gold transition-colors duration-300 shadow-inner">
+                        <i class="fa-solid fa-snowflake text-2xl text-gold group-hover:text-navy transition-colors"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3 text-white">
+                        <span class="en">AC Repair & Gas Refill</span><span class="ar">إصلاح وتعبئة المكيف</span>
+                    </h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        <span class="en">Compressor repair, leak detection, and premium Freon gas refill for maximum
+                            cooling.</span>
+                        <span class="ar">إصلاح الكمبروسر، كشف التسريبات، وتعبئة فريون ممتاز لتبريد مثالي.</span>
+                    </p>
+                </div>
+                <div class="premium-card p-8 rounded-2xl group" data-aos="fade-up">
+                    <div
+                        class="w-14 h-14 rounded-xl flex items-center justify-center mb-6 bg-[#1a2942] group-hover:bg-gold transition-colors duration-300 shadow-inner">
+                        <i
+                            class="fa-solid fa-car-battery text-2xl text-gold group-hover:text-navy transition-colors"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3 text-white">
+                        <span class="en">Battery Services</span><span class="ar">خدمات البطارية</span>
+                    </h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        <span class="en">Battery testing, replacement, and terminal cleaning to ensure a reliable start
+                            every time.</span>
+                        <span class="ar">فحص البطارية، استبدالها، وتنظيف الأقطاب لضمان تشغيل موثوق في كل مرة.</span>
+                    </p>
+                </div>
+                <div class="premium-card p-8 rounded-2xl group" data-aos="fade-up" data-aos-delay="50">
+                    <div
+                        class="w-14 h-14 rounded-xl flex items-center justify-center mb-6 bg-[#1a2942] group-hover:bg-gold transition-colors duration-300 shadow-inner">
+                        <i
+                            class="fa-solid fa-plug-circle-bolt text-2xl text-gold group-hover:text-navy transition-colors"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3 text-white">
+                        <span class="en">Alternator Repair</span><span class="ar">إصلاح الدينمو</span>
+                    </h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        <span class="en">Fixing charging system issues, repairing or replacing failing
+                            alternators.</span>
+                        <span class="ar">إصلاح مشاكل نظام الشحن، وإصلاح أو استبدال الدينمو المعطل.</span>
+                    </p>
+                </div>
+                <div class="premium-card p-8 rounded-2xl group" data-aos="fade-up" data-aos-delay="100">
+                    <div
+                        class="w-14 h-14 rounded-xl flex items-center justify-center mb-6 bg-[#1a2942] group-hover:bg-gold transition-colors duration-300 shadow-inner">
+                        <i class="fa-solid fa-wrench text-2xl text-gold group-hover:text-navy transition-colors"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3 text-white">
+                        <span class="en">General Mechanics</span><span class="ar">الميكانيكا العامة</span>
+                    </h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        <span class="en">Brakes, suspension, engine repairs, and resolving unusual vehicle noises
+                            expertly.</span>
+                        <span class="ar">الفرامل، المساعدات، إصلاح المحرك، ومعالجة الأصوات غير الطبيعية
+                            باحترافية.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="py-24 bg-[#0a1526] relative border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-20" data-aos="fade-up">
+                <h2 class="text-gold font-bold tracking-widest uppercase text-sm mb-2">
+                    <span class="en">How We Work</span><span class="ar">كيف نعمل</span>
+                </h2>
+                <h3 class="text-3xl md:text-5xl font-bold mb-4">
+                    <span class="en">Our Work Process</span><span class="ar">آلية العمل لدينا</span>
+                </h3>
+                <div class="w-20 h-1 bg-gold mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 lg:gap-4 relative">
+
+                <div class="process-card relative bg-[#111D32] border border-gray-800 p-8 rounded-2xl hover:border-gold/50 transition-colors duration-300"
+                    data-aos="fade-up" data-aos-delay="0">
+                    <div class="process-connector"></div>
+                    <div
+                        class="absolute top-4 right-6 rtl:left-6 rtl:right-auto text-5xl font-black text-gray-800/50 select-none">
+                        01</div>
+                    <div
+                        class="w-16 h-16 bg-navy rounded-full flex items-center justify-center text-gold mb-6 relative z-10 border border-gray-700 shadow-inner">
+                        <i class="fa-solid fa-clipboard-list text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2 text-white relative z-10"><span class="en">Inspection</span><span
+                            class="ar">الفحص</span></h4>
+                    <p class="text-gray-400 text-sm relative z-10 leading-relaxed"><span class="en">Visual & physical
+                            check of the issue.</span><span class="ar">فحص بصري ومادي شامل للمشكلة.</span></p>
+                </div>
+
+                <div class="process-card relative bg-[#111D32] border border-gray-800 p-8 rounded-2xl hover:border-gold/50 transition-colors duration-300 lg:mt-8"
+                    data-aos="fade-up" data-aos-delay="50">
+                    <div class="process-connector"></div>
+                    <div
+                        class="absolute top-4 right-6 rtl:left-6 rtl:right-auto text-5xl font-black text-gray-800/50 select-none">
+                        02</div>
+                    <div
+                        class="w-16 h-16 bg-navy rounded-full flex items-center justify-center text-gold mb-6 relative z-10 border border-gray-700 shadow-inner">
+                        <i class="fa-solid fa-laptop-medical text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2 text-white relative z-10"><span class="en">Diagnosis</span><span
+                            class="ar">التشخيص</span></h4>
+                    <p class="text-gray-400 text-sm relative z-10 leading-relaxed"><span class="en">Computerized
+                            scanning for faults.</span><span class="ar">فحص كمبيوتر لتحديد العطل بدقة.</span></p>
+                </div>
+
+                <div class="process-card relative bg-[#111D32] border border-gray-800 p-8 rounded-2xl border-t-4 border-t-gold shadow-[0_0_30px_rgba(212,175,55,0.1)] hover:border-gold transition-colors duration-300 md:col-span-2 lg:col-span-1"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div class="process-connector"></div>
+                    <div
+                        class="absolute top-4 right-6 rtl:left-6 rtl:right-auto text-5xl font-black text-gold/20 select-none">
+                        03</div>
+                    <div
+                        class="w-16 h-16 bg-gold rounded-full flex items-center justify-center text-navy mb-6 relative z-10 shadow-lg">
+                        <i class="fa-solid fa-screwdriver-wrench text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2 text-gold relative z-10"><span class="en">Repair</span><span
+                            class="ar">الإصلاح</span></h4>
+                    <p class="text-gray-400 text-sm relative z-10 leading-relaxed"><span class="en">Expert repair using
+                            quality parts.</span><span class="ar">إصلاح احترافي بقطع غيار عالية الجودة.</span></p>
+                </div>
+
+                <div class="process-card relative bg-[#111D32] border border-gray-800 p-8 rounded-2xl hover:border-gold/50 transition-colors duration-300 lg:mt-8"
+                    data-aos="fade-up" data-aos-delay="150">
+                    <div class="process-connector"></div>
+                    <div
+                        class="absolute top-4 right-6 rtl:left-6 rtl:right-auto text-5xl font-black text-gray-800/50 select-none">
+                        04</div>
+                    <div
+                        class="w-16 h-16 bg-navy rounded-full flex items-center justify-center text-gold mb-6 relative z-10 border border-gray-700 shadow-inner">
+                        <i class="fa-solid fa-gauge-high text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2 text-white relative z-10"><span class="en">Testing</span><span
+                            class="ar">الاختبار</span></h4>
+                    <p class="text-gray-400 text-sm relative z-10 leading-relaxed"><span class="en">Rigorous testing to
+                            ensure safety.</span><span class="ar">اختبار صارم للتأكد من السلامة.</span></p>
+                </div>
+
+                <div class="process-card relative bg-[#111D32] border border-gray-800 p-8 rounded-2xl hover:border-gold/50 transition-colors duration-300"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div
+                        class="absolute top-4 right-6 rtl:left-6 rtl:right-auto text-5xl font-black text-gray-800/50 select-none">
+                        05</div>
+                    <div
+                        class="w-16 h-16 bg-navy rounded-full flex items-center justify-center text-gold mb-6 relative z-10 border border-gray-700 shadow-inner">
+                        <i class="fa-solid fa-car-side text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2 text-white relative z-10"><span class="en">Delivery</span><span
+                            class="ar">التسليم</span></h4>
+                    <p class="text-gray-400 text-sm relative z-10 leading-relaxed"><span class="en">Vehicle handed over
+                            in perfect condition.</span><span class="ar">تسليم السيارة في حالة عمل مثالية.</span></p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-navy border-t border-gray-800 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-start">
+
+                <div data-aos="fade-up">
+                    <h2 class="text-gold font-bold tracking-widest uppercase text-sm mb-2">
+                        <span class="en">About Amanah</span><span class="ar">عن أمانة</span>
+                    </h2>
+                    <h3 class="text-3xl md:text-4xl font-bold mb-6">
+                        <span class="en">15+ Years of Saudi Market Expertise</span>
+                        <span class="ar">أكثر من ١٥ عاماً من الخبرة في السوق السعودي</span>
+                    </h3>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        <span class="en">Amanah Auto Care was founded on one core principle: <strong>Honesty
+                                (Amanah)</strong>. Operating in the heart of Makkah, we understand the unique demands
+                            the Saudi climate places on vehicles. Our workshop is equipped with the latest diagnostic
+                            tools and staffed by technicians who treat your car like their own.</span>
+                        <span class="ar">تأسست ورشة "أمانة" على مبدأ أساسي واحد: <strong>الأمانة</strong>. نعمل في قلب
+                            مكة المكرمة ونفهم التحديات التي يفرضها المناخ السعودي على السيارات. ورشتنا مجهزة بأحدث أجهزة
+                            الفحص ويديرها فنيون يعاملون سيارتك وكأنها سيارتهم.</span>
+                    </p>
+                    <ul class="space-y-4 mb-8 text-gray-300 font-medium">
+                        <li class="flex items-center gap-3">
+                            <div class="w-6 h-6 rounded-full bg-gold/20 flex items-center justify-center shrink-0"><i
+                                    class="fa-solid fa-check text-gold text-xs"></i></div> <span class="en">Transparent
+                                Pricing</span><span class="ar">أسعار شفافة</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div class="w-6 h-6 rounded-full bg-gold/20 flex items-center justify-center shrink-0"><i
+                                    class="fa-solid fa-check text-gold text-xs"></i></div> <span class="en">Modern
+                                Diagnostic Equipment</span><span class="ar">معدات فحص حديثة</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div class="w-6 h-6 rounded-full bg-gold/20 flex items-center justify-center shrink-0"><i
+                                    class="fa-solid fa-check text-gold text-xs"></i></div> <span class="en">Customer
+                                Focused Approach</span><span class="ar">تركيز تام على رضا العميل</span>
+                        </li>
+                    </ul>
+
+                    <a href="#contact"
+                        class="inline-flex items-center gap-2 px-8 py-3 bg-transparent border-2 border-gold text-gold font-bold rounded-full hover:bg-gold hover:text-navy transition-colors duration-300">
+                        <span class="en">Contact Us</span><span class="ar">تواصل معنا</span> <i
+                            class="fa-solid fa-arrow-right rtl:rotate-180"></i>
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6" data-aos="fade-up" data-aos-delay="100">
+
+                    <div
+                        class="bg-[#111D32] border border-gray-800 rounded-2xl overflow-hidden group hover:border-gold/50 transition-colors duration-300">
+                        <div class="h-64 bg-gray-800 relative overflow-hidden">
+                            <img src="amanah-auto-care-owner.jpeg"
+                                alt="Lead Technician Attique Ur Rehman amanahautocare class=" w-full h-full object-cover
+                                group-hover:scale-105 transition-transform duration-500 grayscale
+                                group-hover:grayscale-0">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-[#111D32] via-[#111D32]/80 to-transparent opacity-90">
+                            </div>
+                        </div>
+                        <div class="p-6 relative -mt-20 text-center z-10">
+                            <div
+                                class="w-16 h-16 mx-auto bg-navy border border-gray-700 rounded-full flex items-center justify-center mb-3 shadow-lg group-hover:border-gold transition-colors">
+                                <i class="fa-solid fa-user-tie text-gold text-2xl"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-white mb-1"><span class="en">Attiq ur Rehman</span><span
+                                    class="ar">عتیق الرحمان</span></h4>
+                            <p class="text-gold text-sm mb-4 font-medium"><span class="en">Lead Auto
+                                    Electrician</span><span class="ar">كبير فنيي الكهرباء</span></p>
+                            <div class="flex justify-center gap-3">
+                                <a href="tel:+966569384183"
+                                    class="w-10 h-10 rounded-full bg-navy border border-gray-700 flex items-center justify-center hover:border-gold hover:text-gold transition-colors"><i
+                                        class="fa-solid fa-phone"></i></a>
+                                <a href="https://wa.me/966569384183" target="_blank"
+                                    class="w-10 h-10 rounded-full bg-navy border border-gray-700 flex items-center justify-center hover:border-[#25D366] hover:text-[#25D366] transition-colors"><i
+                                        class="fa-brands fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-[#111D32] border border-gray-800 rounded-2xl overflow-hidden group hover:border-gold/50 transition-colors duration-300 sm:translate-y-8">
+                        <div class="h-64 bg-gray-800 relative overflow-hidden">
+                            <img src="amanah-auto-care-owner2.jpeg" alt="Senior Mechanic Nawaz Amanah Auto Care"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 grayscale group-hover:grayscale-0">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-[#111D32] via-[#111D32]/80 to-transparent opacity-90">
+                            </div>
+                        </div>
+                        <div class="p-6 relative -mt-20 text-center z-10">
+                            <div
+                                class="w-16 h-16 mx-auto bg-navy border border-gray-700 rounded-full flex items-center justify-center mb-3 shadow-lg group-hover:border-gold transition-colors">
+                                <i class="fa-solid fa-user-gear text-gold text-2xl"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-white mb-1"><span class="en">Muhammad Nawaz</span><span
+                                    class="ar">محمد نواز</span></h4>
+                            <p class="text-gold text-sm mb-4 font-medium"><span class="en">Senior Mechanic</span><span
+                                    class="ar">كبير الميكانيكيين</span></p>
+                            <div class="flex justify-center gap-3">
+                                <a href="tel:+966568344021"
+                                    class="w-10 h-10 rounded-full bg-navy border border-gray-700 flex items-center justify-center hover:border-gold hover:text-gold transition-colors"><i
+                                        class="fa-solid fa-phone"></i></a>
+                                <a href="https://wa.me/966568344021" target="_blank"
+                                    class="w-10 h-10 rounded-full bg-navy border border-gray-700 flex items-center justify-center hover:border-[#25D366] hover:text-[#25D366] transition-colors"><i
+                                        class="fa-brands fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-[#0a1526] border-y border-gray-800 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-gold font-bold tracking-widest uppercase text-sm mb-2">
+                    <span class="en">Testimonials</span><span class="ar">آراء العملاء</span>
+                </h2>
+                <h3 class="text-3xl md:text-4xl font-bold">
+                    <span class="en">What Our Clients Say</span><span class="ar">ماذا يقول عملاؤنا</span>
+                </h3>
+            </div>
+
+            <div class="swiper testimonialSwiper pb-12" data-aos="fade-up">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="bg-navy border border-gray-800 p-8 rounded-2xl h-full shadow-lg">
+                            <div class="flex text-gold mb-4 text-sm"><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            <p class="text-gray-300 mb-6 italic leading-relaxed">"Had an electrical short that 3 other
+                                mechanics couldn't find. Amanah Auto Care found it in 30 minutes. Extremely professional
+                                and honest pricing."</p>
+                            <h5 class="font-bold text-white">- Khalid M. <span
+                                    class="text-xs text-gray-500 font-normal block mt-1">Makkah</span></h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="bg-navy border border-gray-800 p-8 rounded-2xl h-full shadow-lg">
+                            <div class="flex text-gold mb-4 text-sm rtl:justify-end"><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            <p class="text-gray-300 mb-6 italic leading-relaxed" dir="rtl">"ورشة ممتازة جداً وأسعارهم
+                                معقولة. فحصوا المكيف وعبوا فريون، الشغل نظيف والأمانة عندهم عالية. أنصح بهم بشدة."</p>
+                            <h5 class="font-bold text-white text-right">- عبدالله س. <span
+                                    class="text-xs text-gray-500 font-normal block mt-1">مكة المكرمة</span></h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="bg-navy border border-gray-800 p-8 rounded-2xl h-full shadow-lg">
+                            <div class="flex text-gold mb-4 text-sm"><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            <p class="text-gray-300 mb-6 italic leading-relaxed">"Best general mechanical workshop in
+                                Makkah. My car's suspension feels brand new after they fixed it. Fast turnaround time."
+                            </p>
+                            <h5 class="font-bold text-white">- Faisal R. <span
+                                    class="text-xs text-gray-500 font-normal block mt-1">Makkah</span></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination mt-8"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-navy relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-gold font-bold tracking-widest uppercase text-sm mb-2">
+                    <span class="en">FAQ</span><span class="ar">الأسئلة الشائعة</span>
+                </h2>
+                <h3 class="text-3xl md:text-4xl font-bold mb-4">
+                    <span class="en">Frequently Asked Questions</span><span class="ar">الأسئلة المتكررة</span>
+                </h3>
+            </div>
+
+            <div class="space-y-4" id="faq-container" data-aos="fade-up">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-[#0a1526] relative overflow-hidden border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div
+                class="grid lg:grid-cols-2 gap-0 bg-navy border border-gray-800 rounded-3xl overflow-hidden shadow-2xl">
+
+                <div
+                    class="p-8 lg:p-16 flex flex-col justify-center border-b lg:border-b-0 lg:border-r rtl:border-r-0 rtl:lg:border-l border-gray-800">
+                    <h3 class="text-3xl font-bold mb-6">
+                        <span class="en">Get in Touch</span><span class="ar">تواصل معنا</span>
+                    </h3>
+                    <p class="text-gray-400 mb-10 leading-relaxed">
+                        <span class="en">Due to high demand and to ensure the best service, we operate strictly by
+                            appointment. <strong>Contact us via WhatsApp or phone, and we will share our exact workshop
+                                location pin in Makkah immediately.</strong></span>
+                        <span class="ar">نظراً للطلب العالي ولضمان أفضل خدمة، نعمل بنظام المواعيد. <strong>تواصل معنا
+                                عبر الواتساب أو الهاتف وسنقوم بمشاركة موقع الورشة الدقيق في مكة فوراً.</strong></span>
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-5">
+                            <div
+                                class="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center text-gold shrink-0 border border-gold/20">
+                                <i class="fa-solid fa-location-dot text-xl"></i></div>
+                            <div>
+                                <h5 class="font-bold text-white text-lg"><span class="en">Location</span><span
+                                        class="ar">الموقع</span></h5>
+                                <p class="text-gray-400"><span class="en">Makkah, Saudi Arabia</span><span
+                                        class="ar">مكة المكرمة، المملكة العربية السعودية</span></p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-5">
+                            <div
+                                class="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center text-gold shrink-0 border border-gold/20">
+                                <i class="fa-solid fa-clock text-xl"></i></div>
+                            <div>
+                                <h5 class="font-bold text-white text-lg"><span class="en">Working Hours</span><span
+                                        class="ar">أوقات العمل</span></h5>
+                                <p class="text-gray-400"><span class="en">Sat - Thu: 8:00 AM - 10:00 PM</span><span
+                                        class="ar">السبت - الخميس: ٨:٠٠ ص - ١٠:٠٠ م</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-10 flex flex-col sm:flex-row gap-4">
+                        <a href="tel:+966569384183"
+                            class="flex-1 text-center py-4 px-4 bg-transparent border border-gold text-gold rounded-xl hover:bg-gold hover:text-navy transition font-bold"><i
+                                class="fa-solid fa-phone mr-2 rtl:ml-2"></i> <span class="en">Call Us</span><span
+                                class="ar">اتصل بنا</span></a>
+                        <a href="https://wa.me/966569384183" target="_blank"
+                            class="flex-1 text-center py-4 px-4 bg-[#25D366] text-white rounded-xl hover:bg-[#128C7E] transition font-bold"><i
+                                class="fa-brands fa-whatsapp mr-2 rtl:ml-2 text-lg"></i> WhatsApp</a>
+                    </div>
+                </div>
+
+                <div class="p-8 lg:p-16 bg-[#0d182b]">
+                    <form onsubmit="event.preventDefault(); alert('Message sent successfully!');"
+                        class="h-full flex flex-col justify-center">
+                        <h4 class="text-2xl font-bold mb-8 text-white"><span class="en">Send a Message</span><span
+                                class="ar">أرسل رسالة</span></h4>
+                        <div class="space-y-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-400 mb-2"><span class="en">Full
+                                        Name</span><span class="ar">الاسم الكامل</span></label>
+                                <input type="text" required
+                                    class="w-full bg-navy border border-gray-700 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-gold transition shadow-inner">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-400 mb-2"><span class="en">Phone
+                                        Number</span><span class="ar">رقم الجوال</span></label>
+                                <input type="tel" required
+                                    class="w-full bg-navy border border-gray-700 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-gold transition shadow-inner"
+                                    dir="ltr">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-400 mb-2"><span class="en">Vehicle
+                                        Issue</span><span class="ar">المشكلة</span></label>
+                                <textarea rows="3" required
+                                    class="w-full bg-navy border border-gray-700 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-gold transition resize-none shadow-inner"></textarea>
+                            </div>
+                            <button type="submit"
+                                class="w-full py-4 bg-gold text-navy font-bold rounded-xl hover:bg-white transition duration-300 text-lg">
+                                <span class="en">Submit Request</span><span class="ar">إرسال الطلب</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-navy border-t border-gray-800 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <div class="lg:col-span-1">
+                    <span class="text-2xl font-bold tracking-wider text-white mb-6 block">
+                        <i class="fa-solid fa-wrench text-gold mr-2 rtl:ml-2 rtl:mr-0"></i>AMANAH<span
+                            class="text-gold">AUTO</span>
+                    </span>
+                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                        <span class="en">Premium auto electrical and mechanical repairs in Makkah. Trust, honesty, and
+                            professional service.</span>
+                        <span class="ar">إصلاحات كهربائية وميكانيكية متميزة للسيارات في مكة. ثقة، أمانة، وخدمة
+                            احترافية.</span>
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-6 text-lg"><span class="en">Quick Links</span><span
+                            class="ar">روابط سريعة</span></h4>
+                    <ul class="space-y-3 text-sm text-gray-400 font-medium">
+                        <li><a href="#services" class="hover:text-gold transition"><span class="en">Services</span><span
+                                    class="ar">الخدمات</span></a></li>
+                        <li><a href="#process" class="hover:text-gold transition"><span class="en">Work
+                                    Process</span><span class="ar">آلية العمل</span></a></li>
+                        <li><a href="#about" class="hover:text-gold transition"><span class="en">About &
+                                    Team</span><span class="ar">من نحن وفريقنا</span></a></li>
+                        <li><a href="#contact" class="hover:text-gold transition"><span class="en">Contact</span><span
+                                    class="ar">اتصل بنا</span></a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-6 text-lg"><span class="en">Top Services</span><span
+                            class="ar">أهم الخدمات</span></h4>
+                    <ul class="space-y-3 text-sm text-gray-400 font-medium">
+                        <li><span class="en">Auto Electrician Makkah</span><span class="ar">كهربائي سيارات مكة</span>
+                        </li>
+                        <li><span class="en">Car AC Repair</span><span class="ar">إصلاح مكيفات السيارات</span></li>
+                        <li><span class="en">Computer Diagnostics</span><span class="ar">فحص كمبيوتر</span></li>
+                        <li><span class="en">General Mechanic</span><span class="ar">ميكانيكي عام</span></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-6 text-lg"><span class="en">Connect</span><span class="ar">تواصل
+                            معنا</span></h4>
+                    <div class="flex gap-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-gold hover:text-navy transition"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-gold hover:text-navy transition"><i
+                                class="fa-brands fa-snapchat"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-gold hover:text-navy transition"><i
+                                class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+
+           <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 font-medium">
+    <p>&copy; <span id="year"></span> Amanah Auto Care. All rights reserved.</p>
+    <div class="flex flex-col md:flex-row items-center gap-2 mt-4 md:mt-0">
+        <p>Makkah, Saudi Arabia</p>
+        <span class="hidden md:inline text-gray-700">|</span>
+        <p>Built by <a href="https://growthlift-digital.vercel.app" target="_blank" rel="noopener noreferrer" class="text-gold hover:text-white transition-colors duration-300 font-bold">GrowthLift Digital</a></p>
+    </div>
+</div>
+        </div>
+    </footer>
+
+    <div class="fixed bottom-6 right-6 rtl:left-6 rtl:right-auto z-40 flex flex-col gap-3">
+        <a href="tel:+966569384183"
+            class="w-12 h-12 md:w-14 md:h-14 bg-navy border-2 border-gold text-gold rounded-full flex items-center justify-center text-xl md:text-2xl shadow-lg hover:bg-gold hover:text-navy transition-colors">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+        <a href="https://wa.me/966569384183" target="_blank"
+            class="w-12 h-12 md:w-14 md:h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center text-2xl md:text-3xl shadow-[0_0_15px_rgba(37,211,102,0.5)] hover:bg-[#128C7E] transition-colors floating">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

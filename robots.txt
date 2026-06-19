@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /_vercel/
+Disallow: /incoming/
+
+# Host
+Host: https://amanahautocare.vercel.app
+
+# Sitemap Location
+Sitemap: https://amanahautocare.vercel.app/sitemap.xml
